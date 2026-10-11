@@ -61,7 +61,7 @@ Protein–protein interaction (PPI) networks were built from the I_BM vs H_BM an
 
 ## Software and reproducibility
 
-The differential expression, normalization, heatmap, volcano and Venn analyses were run in R using Bioconductor (GEOquery, limma) and CRAN packages (dplyr, ggplot2, ggrepel, VennDiagram, pheatmap). The code is in `scripts/deg_analysis.R`, and package versions are recorded in `results/sessionInfo.txt` when the script is run.
+The differential expression, normalization, heatmap, volcano and Venn analyses were run in R using Bioconductor (GEOquery, limma) and CRAN packages (dplyr, ggplot2, ggrepel, VennDiagram, pheatmap). The code is in `scripts/sal_GSE25624.R`.
 
 The enrichment analyses (PANTHER, g:Profiler web servers) and the network analysis (STRING, Cytoscape desktop) were done interactively. Their exported results are included in `enrichment/` and `network/`.
 

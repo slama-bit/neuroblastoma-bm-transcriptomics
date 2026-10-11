@@ -85,7 +85,7 @@ PANTHER GO-Slim BP enrichment (FDR < 0.05), with full tables in `enrichment/pant
 │   ├── panther/       # GO-Slim BP overrepresentation (I vs H, NI vs H)
 │   └── gprofiler/     # g:Profiler results for all three contrasts
 ├── network/           # STRING/Cytoscape sessions, hub-gene tables and plots
-├── scripts/           # R analysis (deg_analysis.R) + original script
+├── scripts/           # R analysis script (sal_GSE25624.R)
 ├── METHODS.md         # full methods write-up
 └── data/              # raw data not tracked (see data/README.md)
 ```
@@ -99,14 +99,9 @@ install.packages(c("BiocManager", "dplyr", "ggplot2", "ggrepel", "VennDiagram", 
 BiocManager::install(c("GEOquery", "limma"))
 ```
 
-```bash
-# from the repository root; downloads GSE25624 on first run
-Rscript scripts/deg_analysis.R
-```
+Open `scripts/sal_GSE25624.R`, set the `setwd()` path on line 2 to your own folder, and run it. It downloads GSE25624 and writes the DEG tables, volcano plot, Venn diagram and intersections.
 
-The script regenerates `results/degs/`, `results/venn/` and `figures/`. `scripts/original/sal_GSE25624.R` is the original interactive script, kept for provenance; `scripts/deg_analysis.R` is the same analysis made portable (relative paths, heatmaps saved to file).
-
-The enrichment (PANTHER, g:Profiler) and network (STRING/Cytoscape) steps were run in their web tools and the Cytoscape desktop app, using the DEG gene lists as input. Their exported results are in `enrichment/` and `network/`.
+The enrichment (PANTHER, g:Profiler) and network (STRING/Cytoscape) steps were done in their web tools and the Cytoscape desktop app, using the DEG lists as input. Their exported results are in `enrichment/` and `network/`.
 
 ## Reference
 
