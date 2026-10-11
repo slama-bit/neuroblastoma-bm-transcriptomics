@@ -9,7 +9,7 @@ This project analyses differential expression in **bone marrow from neuroblastom
 | **H** | Healthy young donors | 8 |
 
 The workflow runs in five steps:
-1. **Differential expression**: gene-level DE (limma-style output) for three contrasts. A gene counts as a DEG at **FDR < 0.05 and |log2FC| ≥ 1**.
+1. **Differential expression**: GEOquery, then log2 transformation if needed and quantile normalisation, then **limma** (cell-means model, three contrasts, eBayes). Probes are collapsed to genes by keeping the most significant probe per gene. A gene counts as a DEG at **FDR < 0.05 and |log2FC| ≥ 1**.
 2. **Venn analysis**: overlaps between the three DEG sets, giving core and unique gene sets.
 3. **Enrichment**: [PANTHER](https://pantherdb.org) GO-Slim overrepresentation (Fisher's exact test, FDR) and [g:Profiler](https://biit.cs.ut.ee/gprofiler) (GO, KEGG, Reactome, CORUM, miRNA).
 4. **Network**: a STRING protein–protein interaction network built in Cytoscape, with the top 30 hub genes ranked by degree.
@@ -67,6 +67,8 @@ PANTHER GO-Slim BP enrichment (FDR < 0.05), with full tables in `enrichment/pant
 - **Cell-type deconvolution was not performed.** Running CIBERSORTx or xCell, or adding cell-type covariates, would separate composition effects from regulation within cells.
 - **Sample sizes are small** (H = 8, I = 9), so effect sizes and DEG counts will be unstable.
 - **The STRING hub ranking (degree) favours well-studied, highly connected proteins** such as histones and cell-cycle genes. Hub status is not evidence of a driver role.
+- **The volcano plots show DEGs only.** They are drawn from the filtered DEG tables, so non-significant genes are absent. A full volcano plot would use every gene (see the comment in the script).
+- **Probe collapsing happens before the fold-change filter.** The most significant probe is kept per gene and the |log2FC| filter is then applied to that probe. A gene can therefore be dropped even if another of its probes passes both cut-offs.
 - **There is no external validation cohort.**
 
 ## Repository layout
@@ -83,6 +85,7 @@ PANTHER GO-Slim BP enrichment (FDR < 0.05), with full tables in `enrichment/pant
 │   ├── panther/       # GO-Slim BP overrepresentation (I vs H, NI vs H)
 │   └── gprofiler/     # g:Profiler results for all three contrasts
 ├── network/           # STRING/Cytoscape sessions, hub-gene tables and plots
+├── scripts/           # R analysis (deg_analysis.R) + original script
 └── data/              # raw data not tracked (see data/README.md)
 ```
 
@@ -90,7 +93,19 @@ DEG table columns: `ProbeID, Gene.symbol, log2FC, AveExpr, t, P.Value, adj.P.Val
 
 ## Reproducing
 
-The R analysis script (GEOquery → limma → gene-level collapsing → VennDiagram/ggplot2) is **not yet included**. It will go in `scripts/`. Instructions for downloading the raw data are in `data/README.md`.
+```r
+install.packages(c("BiocManager", "dplyr", "ggplot2", "ggrepel", "VennDiagram", "pheatmap"))
+BiocManager::install(c("GEOquery", "limma"))
+```
+
+```bash
+# from the repository root; downloads GSE25624 on first run
+Rscript scripts/deg_analysis.R
+```
+
+The script regenerates `results/degs/`, `results/venn/` and `figures/`. `scripts/original/sal_GSE25624.R` is the original interactive script, kept for provenance; `scripts/deg_analysis.R` is the same analysis made portable (relative paths, heatmaps saved to file).
+
+The enrichment (PANTHER, g:Profiler) and network (STRING/Cytoscape) steps were run in their web tools and the Cytoscape desktop app, using the DEG gene lists as input. Their exported results are in `enrichment/` and `network/`.
 
 ## Reference
 
