@@ -86,6 +86,7 @@ PANTHER GO-Slim BP enrichment (FDR < 0.05), with full tables in `enrichment/pant
 │   └── gprofiler/     # g:Profiler results for all three contrasts
 ├── network/           # STRING/Cytoscape sessions, hub-gene tables and plots
 ├── scripts/           # R analysis (deg_analysis.R) + original script
+├── METHODS.md         # full methods write-up
 └── data/              # raw data not tracked (see data/README.md)
 ```
 
