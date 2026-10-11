@@ -1,0 +1,9 @@
+# Raw / large data (download from GEO)
+data/*
+!data/README.md
+*.rds
+.Rhistory
+.RData
+.Rproj.user/
+*.log
+.DS_Store

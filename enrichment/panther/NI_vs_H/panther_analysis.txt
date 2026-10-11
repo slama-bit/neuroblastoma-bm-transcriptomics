@@ -1,0 +1,25 @@
+
+
+
+
+
+Analysis Type:	PANTHER Overrepresentation Test (Released 20240807)
+Annotation Version and Release Date:	PANTHER version 19.0 Released 2024-06-20
+Analyzed List:	Client Text Box Input (Homo sapiens)
+Reference List:	Homo sapiens (all genes in database)
+Test Type:	FISHER
+Correction:	FDR
+PANTHER GO-Slim Biological Process	Homo sapiens - REFLIST (20580)	Client Text Box Input (979)	Client Text Box Input (expected)	Client Text Box Input (over/under)	Client Text Box Input (fold Enrichment)	Client Text Box Input (raw P-value)	Client Text Box Input (FDR)
+heme biosynthetic process (GO:0006783)	7	5	.33	+	15.02	4.67E-06	4.96E-03
+pigment biosynthetic process (GO:0046148)	10	6	.48	+	12.61	2.03E-06	4.31E-03
+heme metabolic process (GO:0042168)	10	5	.48	+	10.51	4.97E-05	1.51E-02
+porphyrin-containing compound metabolic process (GO:0006778)	12	6	.57	+	10.51	8.24E-06	5.83E-03
+pigment metabolic process (GO:0042440)	13	6	.62	+	9.70	1.47E-05	7.79E-03
+tetrapyrrole metabolic process (GO:0033013)	13	6	.62	+	9.70	1.47E-05	6.23E-03
+regulation of cell cycle G2/M phase transition (GO:1902749)	28	7	1.33	+	5.26	2.65E-04	4.33E-02
+regulation of cell cycle (GO:0051726)	208	24	9.89	+	2.43	5.63E-05	1.33E-02
+actin cytoskeleton organization (GO:0030036)	260	28	12.37	+	2.26	5.23E-05	1.39E-02
+actin filament-based process (GO:0030029)	282	29	13.41	+	2.16	9.89E-05	2.10E-02
+cell cycle (GO:0007049)	348	34	16.55	+	2.05	1.01E-04	1.94E-02
+protein modification process (GO:0036211)	1055	78	50.19	+	1.55	1.04E-04	1.84E-02
+organonitrogen compound metabolic process (GO:1901564)	2287	150	108.79	+	1.38	3.70E-05	1.31E-02

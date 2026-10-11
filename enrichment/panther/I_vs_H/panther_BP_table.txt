@@ -1,0 +1,61 @@
+
+
+cell-substrate junction assembly (GO:0007044)	3	3	.18	+	16.36	2.28E-04	1.31E-02
+heme biosynthetic process (GO:0006783)	7	5	.43	+	11.69	1.60E-05	2.62E-03
+sprouting angiogenesis (GO:0002040)	7	4	.43	+	9.35	4.19E-04	2.12E-02
+heme metabolic process (GO:0042168)	10	5	.61	+	8.18	1.65E-04	1.13E-02
+vascular endothelial growth factor receptor signaling pathway (GO:0048010)	8	4	.49	+	8.18	7.97E-04	3.45E-02
+porphyrin-containing compound metabolic process (GO:0006778)	12	6	.73	+	8.18	3.46E-05	4.32E-03
+pigment biosynthetic process (GO:0046148)	10	5	.61	+	8.18	1.65E-04	1.09E-02
+response to reactive oxygen species (GO:0000302)	8	4	.49	+	8.18	7.97E-04	3.38E-02
+tetrapyrrole metabolic process (GO:0033013)	13	6	.79	+	7.55	6.09E-05	6.80E-03
+pigment metabolic process (GO:0042440)	13	5	.79	+	6.29	7.20E-04	3.25E-02
+metaphase chromosome alignment (GO:0051310)	13	5	.79	+	6.29	7.20E-04	3.18E-02
+circadian regulation of gene expression (GO:0032922)	16	6	.98	+	6.13	2.42E-04	1.35E-02
+detoxification (GO:0098754)	27	10	1.65	+	6.06	2.27E-06	6.89E-04
+response to toxic substance (GO:0009636)	31	11	1.89	+	5.80	1.16E-06	4.91E-04
+regulation of cyclin-dependent protein serine/threonine kinase activity (GO:0000079)	29	9	1.77	+	5.08	3.80E-05	4.48E-03
+defense response to virus (GO:0051607)	39	12	2.38	+	5.03	2.16E-06	7.63E-04
+response to virus (GO:0009615)	40	12	2.45	+	4.91	2.91E-06	7.72E-04
+angiogenesis (GO:0001525)	37	11	2.26	+	4.86	8.32E-06	1.77E-03
+multicellular organismal-level homeostasis (GO:0048871)	21	6	1.28	+	4.67	1.26E-03	4.70E-02
+blood vessel morphogenesis (GO:0048514)	39	11	2.38	+	4.61	1.46E-05	2.81E-03
+mitotic cell cycle phase transition (GO:0044772)	39	10	2.38	+	4.19	8.74E-05	8.43E-03
+cell cycle phase transition (GO:0044770)	39	10	2.38	+	4.19	8.74E-05	8.06E-03
+microtubule cytoskeleton organization involved in mitosis (GO:1902850)	47	12	2.87	+	4.18	1.83E-05	2.77E-03
+tube morphogenesis (GO:0035239)	45	11	2.75	+	4.00	6.29E-05	6.67E-03
+blood vessel development (GO:0001568)	45	11	2.75	+	4.00	6.29E-05	6.36E-03
+vasculature development (GO:0001944)	47	11	2.87	+	3.83	9.64E-05	8.53E-03
+sister chromatid segregation (GO:0000819)	43	10	2.63	+	3.80	2.11E-04	1.24E-02
+tube development (GO:0035295)	48	11	2.93	+	3.75	1.18E-04	9.65E-03
+mitotic sister chromatid segregation (GO:0000070)	41	9	2.51	+	3.59	6.84E-04	3.16E-02
+regulation of protein serine/threonine kinase activity (GO:0071900)	58	12	3.55	+	3.38	1.67E-04	1.08E-02
+mitotic nuclear division (GO:0140014)	44	9	2.69	+	3.35	1.17E-03	4.61E-02
+nuclear chromosome segregation (GO:0098813)	67	13	4.10	+	3.17	1.80E-04	1.09E-02
+mitotic cell cycle process (GO:1903047)	159	29	9.72	+	2.98	1.06E-07	1.13E-04
+mitotic cell cycle (GO:0000278)	208	35	12.71	+	2.75	4.46E-08	9.47E-05
+anatomical structure formation involved in morphogenesis (GO:0048646)	110	17	6.72	+	2.53	3.62E-04	1.92E-02
+establishment of organelle localization (GO:0051656)	105	16	6.42	+	2.49	6.25E-04	2.95E-02
+regulation of kinase activity (GO:0043549)	138	20	8.44	+	2.37	4.38E-04	2.16E-02
+defense response to symbiont (GO:0140546)	198	28	12.10	+	2.31	3.28E-05	4.36E-03
+regulation of transferase activity (GO:0051338)	142	20	8.68	+	2.30	5.31E-04	2.56E-02
+regulation of cell cycle (GO:0051726)	208	29	12.71	+	2.28	2.97E-05	4.20E-03
+cell cycle (GO:0007049)	348	47	21.27	+	2.21	3.43E-07	2.42E-04
+organelle localization (GO:0051640)	144	19	8.80	+	2.16	1.36E-03	4.98E-02
+cell cycle process (GO:0022402)	304	40	18.58	+	2.15	4.89E-06	1.15E-03
+regulation of phosphorylation (GO:0042325)	205	26	12.53	+	2.07	3.66E-04	1.90E-02
+defense response to other organism (GO:0098542)	232	29	14.18	+	2.04	2.54E-04	1.38E-02
+regulation of phosphorus metabolic process (GO:0051174)	229	27	14.00	+	1.93	1.16E-03	4.73E-02
+regulation of phosphate metabolic process (GO:0019220)	229	27	14.00	+	1.93	1.16E-03	4.64E-02
+response to stress (GO:0006950)	809	85	49.45	+	1.72	9.17E-07	4.86E-04
+microtubule-based process (GO:0007017)	362	38	22.13	+	1.72	1.18E-03	4.57E-02
+cytoskeleton organization (GO:0007010)	582	59	35.58	+	1.66	1.41E-04	1.00E-02
+cellular component organization (GO:0016043)	2216	177	135.46	+	1.31	1.68E-04	1.05E-02
+cellular component organization or biogenesis (GO:0071840)	2336	180	142.79	+	1.26	9.41E-04	3.92E-02
+cellular process (GO:0009987)	8440	571	515.91	+	1.11	1.26E-03	4.76E-02
+biological_process (GO:0008150)	12434	824	760.06	+	1.08	1.38E-04	1.05E-02
+Unclassified (UNCLASSIFIED)	8146	434	497.94	-	.87	1.38E-04	1.01E-02
+detection of stimulus (GO:0051606)	213	3	13.02	-	.23	1.37E-03	4.93E-02
+nervous system process (GO:0050877)	296	4	18.09	-	.22	1.15E-04	9.77E-03
+sensory perception of chemical stimulus (GO:0007606)	225	2	13.75	-	.15	1.27E-04	1.00E-02
+sensory perception (GO:0007600)	269	2	16.44	-	.12	1.48E-05	2.62E-03
