@@ -38,6 +38,17 @@ The workflow runs in five steps:
 | Shared by all three | 5 (LOC730961, TMEM107, RGS6, EIF4E, EBF3) | `results/venn/CORE_ALL.tsv` |
 | Unique to I vs H / NI vs H / I vs NI | 531 / 311 / 2 | `results/venn/UNIQUE_*.tsv` |
 
+**Direction concordance of the core sets.** A gene counts as truly shared only if it changes in the same direction in both contrasts. Both core sets pass this check:
+
+| Core set | Genes | Same direction | Opposite |
+|---|---|---|---|
+| Disease core (I vs H ∩ NI vs H) | 788 | 787 (279 up, 508 down) | 1 (HDAC4) |
+| Metastasis core (I vs H ∩ I vs NI) | 55 | **55** (23 up, 32 down) | 0 |
+
+The **metastasis core** holds the genes that change in metastatic marrow relative to *both* healthy and localized marrow, with a consistent direction:
+- **Up (23):** an interferon-response programme (ISG15, MX1, MX2, IRF7, OASL, OAS3, IFIT2, IFIT5, IFI44, XAF1, HERC5, EPSTI1, LY6E, CXCL10), plus KLF4, IL4I1, MUC1, EIF4E, TMEM107, DNAH3, PLA1A, SCO2 and LOC730961.
+- **Down (32):** the niche-retention genes CXCL12 and VCAM1; platelet and megakaryocyte genes (PF4, PF4V1, PPBP, ITGB3, GP1BA, CLEC1B, TUBB1, CMTM5, SDPR, TMEM40); the extracellular-matrix and vascular genes LAMA4, LAMB1, VEGFC, ESAM, CLDN5 and CALD1; and ABLIM3, C6orf25, CP, EBF3, GABRE, GNAZ, IGFBP3, LIFR, PDGFA, RAB27B, RGS6, SPX, TF and TNFAIP8L1.
+
 ### Metastatic vs localized: the key contrast
 
 The two NB groups differ mainly in two programmes:

@@ -45,7 +45,7 @@ Differentially expressed genes (DEGs) were therefore defined as genes with FDR <
 - The **disease-associated core** is the set of genes that are DEGs in both I_BM vs H_BM and NI_BM vs H_BM.
 - The **metastasis-associated core** is the set of genes that are DEGs in both I_BM vs H_BM and I_BM vs NI_BM.
 
-Genes found in only one contrast were exported as contrast-specific sets.
+Genes found in only one contrast were exported as contrast-specific sets. For each core set, direction concordance was checked: a gene was counted as concordant when the sign of its log2 fold change was the same in both contrasts.
 
 ## Functional enrichment analysis
 
